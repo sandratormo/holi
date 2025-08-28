@@ -161,15 +161,18 @@ backend:
 
   - task: "Dog Listings CRUD"
     implemented: true
-    working: false
+    working: true
     file: "app/api/[[...path]]/route.js"
     stuck_count: 1
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: false
         agent: "testing"
         comment: "GET /api/dogs and POST /api/dogs fail with 500 errors due to missing dog_listings table. API logic is correctly implemented with proper validation and filtering."
+      - working: true
+        agent: "testing"
+        comment: "Dog listings CRUD operations working perfectly after manual database table creation. Successfully tested: POST /api/dogs (create), GET /api/dogs (list with filters), GET /api/dogs/{id} (single dog). All filtering by size, gender, urgent status, province, and city working correctly. Validation and error handling working properly."
 
   - task: "Messages Endpoint"
     implemented: true
