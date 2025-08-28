@@ -131,15 +131,18 @@ backend:
 
   - task: "Provinces Endpoint"
     implemented: true
-    working: false
+    working: true
     file: "app/api/[[...path]]/route.js"
     stuck_count: 1
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: false
         agent: "testing"
         comment: "GET /api/provinces fails with 500 error: 'Could not find table public.provinces in schema cache'. Depends on database setup being completed first."
+      - working: true
+        agent: "testing"
+        comment: "GET /api/provinces working correctly after manual database table creation. Found 10 Spanish provinces including Madrid, Barcelona, Valencia, Sevilla. Spanish data initialization working properly."
 
   - task: "Cities Endpoint"
     implemented: true
