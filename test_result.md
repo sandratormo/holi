@@ -176,15 +176,18 @@ backend:
 
   - task: "Messages Endpoint"
     implemented: true
-    working: false
+    working: true
     file: "app/api/[[...path]]/route.js"
     stuck_count: 1
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: false
         agent: "testing"
         comment: "GET /api/messages and POST /api/messages fail with 500 errors due to missing messages table. Contact form logic is properly implemented."
+      - working: true
+        agent: "testing"
+        comment: "Messages endpoints working correctly after manual database table creation. Successfully tested: POST /api/messages (send message), GET /api/messages (list all), GET /api/messages?listing_id={id} (filter by listing). Contact form functionality working with proper validation and message storage."
 
   - task: "Search Functionality"
     implemented: true
