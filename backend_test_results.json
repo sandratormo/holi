@@ -1,92 +1,94 @@
 {
   "summary": {
-    "passed": 0,
-    "failed": 12,
-    "success_rate": 0.0
+    "passed": 3,
+    "failed": 9,
+    "success_rate": 25.0
   },
   "detailed_results": [
     {
       "test": "Root Endpoint",
-      "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:18:36.678842",
-      "response_data": null
+      "success": true,
+      "message": "API root endpoint working correctly",
+      "timestamp": "2025-08-28T15:18:55.455638",
+      "response_data": {
+        "message": "AdoptaCachorros API"
+      }
     },
     {
       "test": "Database Setup",
       "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:18:37.234555",
+      "message": "HTTP 500: {\"error\":\"Internal server error\",\"details\":\"Could not find the table 'public.provinces' in the schema cache\"}",
+      "timestamp": "2025-08-28T15:19:07.575019",
       "response_data": null
     },
     {
       "test": "Provinces Endpoint",
       "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:18:37.789635",
+      "message": "HTTP 500: {\"error\":\"Failed to fetch provinces\"}",
+      "timestamp": "2025-08-28T15:19:08.990422",
       "response_data": null
     },
     {
       "test": "Cities Endpoint",
       "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:18:38.341819",
+      "message": "HTTP 500: {\"error\":\"Failed to fetch cities\"}",
+      "timestamp": "2025-08-28T15:19:10.293217",
       "response_data": null
     },
     {
       "test": "Create Dog Listing",
       "success": false,
       "message": "Cannot get provinces for test data",
-      "timestamp": "2025-08-28T15:18:38.890773",
+      "timestamp": "2025-08-28T15:19:11.270500",
       "response_data": null
     },
     {
       "test": "Get Dog Listings",
       "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:18:39.440104",
+      "message": "HTTP 500: {\"error\":\"Failed to fetch dog listings\"}",
+      "timestamp": "2025-08-28T15:19:12.255195",
       "response_data": null
     },
     {
       "test": "Get Single Dog",
       "success": false,
       "message": "No dog ID available for testing",
-      "timestamp": "2025-08-28T15:18:39.941492",
+      "timestamp": "2025-08-28T15:19:12.755444",
       "response_data": null
     },
     {
       "test": "Send Message",
       "success": false,
       "message": "No dog ID available for testing",
-      "timestamp": "2025-08-28T15:18:40.441661",
+      "timestamp": "2025-08-28T15:19:13.255563",
       "response_data": null
     },
     {
       "test": "Get Messages",
       "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:18:40.989950",
+      "message": "HTTP 500: {\"error\":\"Failed to fetch messages\"}",
+      "timestamp": "2025-08-28T15:19:14.229692",
       "response_data": null
     },
     {
       "test": "Search Functionality",
       "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:18:41.537168",
+      "message": "HTTP 500: {\"error\":\"Search failed\"}",
+      "timestamp": "2025-08-28T15:19:15.452051",
       "response_data": null
     },
     {
       "test": "Stats Endpoint",
-      "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:18:42.111219",
+      "success": true,
+      "message": "Statistics working correctly - Dogs: 0, Urgent: 0, Messages: 0",
+      "timestamp": "2025-08-28T15:19:16.935721",
       "response_data": null
     },
     {
       "test": "Error Handling",
-      "success": false,
-      "message": "Expected 400 error, got: 502",
-      "timestamp": "2025-08-28T15:18:42.660939",
+      "success": true,
+      "message": "Validation errors handled correctly",
+      "timestamp": "2025-08-28T15:19:18.035410",
       "response_data": null
     }
   ]
