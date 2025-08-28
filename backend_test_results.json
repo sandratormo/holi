@@ -9,84 +9,84 @@
       "test": "Root Endpoint",
       "success": false,
       "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:16:01.029891",
+      "timestamp": "2025-08-28T15:18:36.678842",
       "response_data": null
     },
     {
       "test": "Database Setup",
       "success": false,
       "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:16:01.595092",
+      "timestamp": "2025-08-28T15:18:37.234555",
       "response_data": null
     },
     {
       "test": "Provinces Endpoint",
       "success": false,
       "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:16:02.157781",
+      "timestamp": "2025-08-28T15:18:37.789635",
       "response_data": null
     },
     {
       "test": "Cities Endpoint",
       "success": false,
       "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:16:02.710571",
+      "timestamp": "2025-08-28T15:18:38.341819",
       "response_data": null
     },
     {
       "test": "Create Dog Listing",
       "success": false,
       "message": "Cannot get provinces for test data",
-      "timestamp": "2025-08-28T15:16:03.258931",
+      "timestamp": "2025-08-28T15:18:38.890773",
       "response_data": null
     },
     {
       "test": "Get Dog Listings",
       "success": false,
       "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:16:03.808676",
+      "timestamp": "2025-08-28T15:18:39.440104",
       "response_data": null
     },
     {
       "test": "Get Single Dog",
       "success": false,
       "message": "No dog ID available for testing",
-      "timestamp": "2025-08-28T15:16:04.310207",
+      "timestamp": "2025-08-28T15:18:39.941492",
       "response_data": null
     },
     {
       "test": "Send Message",
       "success": false,
       "message": "No dog ID available for testing",
-      "timestamp": "2025-08-28T15:16:04.810350",
+      "timestamp": "2025-08-28T15:18:40.441661",
       "response_data": null
     },
     {
       "test": "Get Messages",
       "success": false,
       "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:16:05.360104",
+      "timestamp": "2025-08-28T15:18:40.989950",
       "response_data": null
     },
     {
       "test": "Search Functionality",
       "success": false,
       "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:16:05.905474",
+      "timestamp": "2025-08-28T15:18:41.537168",
       "response_data": null
     },
     {
       "test": "Stats Endpoint",
       "success": false,
       "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:16:06.476361",
+      "timestamp": "2025-08-28T15:18:42.111219",
       "response_data": null
     },
     {
       "test": "Error Handling",
       "success": false,
       "message": "Expected 400 error, got: 502",
-      "timestamp": "2025-08-28T15:16:07.024920",
+      "timestamp": "2025-08-28T15:18:42.660939",
       "response_data": null
     }
   ]
