@@ -146,15 +146,18 @@ backend:
 
   - task: "Cities Endpoint"
     implemented: true
-    working: false
+    working: true
     file: "app/api/[[...path]]/route.js"
     stuck_count: 1
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: false
         agent: "testing"
         comment: "GET /api/cities fails with 500 error: 'Could not find table public.cities in schema cache'. Depends on database setup being completed first."
+      - working: true
+        agent: "testing"
+        comment: "GET /api/cities working correctly after manual database table creation. Found 10 cities with proper province filtering functionality. Province filter tested and working properly."
 
   - task: "Dog Listings CRUD"
     implemented: true
