@@ -262,13 +262,13 @@ export default function AdoptaCachorros() {
               <Label>Provincia</Label>
               <Select 
                 value={filters.province} 
-                onValueChange={(value) => setFilters({...filters, province: value, city: ''})}
+                onValueChange={(value) => setFilters({...filters, province: value === 'all' ? '' : value, city: ''})}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Todas" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Todas las provincias</SelectItem>
+                  <SelectItem value="all">Todas las provincias</SelectItem>
                   {provinces.map(province => (
                     <SelectItem key={province.id} value={province.id}>
                       {province.name}
@@ -282,14 +282,14 @@ export default function AdoptaCachorros() {
               <Label>Ciudad</Label>
               <Select 
                 value={filters.city} 
-                onValueChange={(value) => setFilters({...filters, city: value})}
+                onValueChange={(value) => setFilters({...filters, city: value === 'all' ? '' : value})}
                 disabled={!filters.province}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Todas" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Todas las ciudades</SelectItem>
+                  <SelectItem value="all">Todas las ciudades</SelectItem>
                   {cities.map(city => (
                     <SelectItem key={city.id} value={city.id}>
                       {city.name}
@@ -303,13 +303,13 @@ export default function AdoptaCachorros() {
               <Label>Tamaño</Label>
               <Select 
                 value={filters.size} 
-                onValueChange={(value) => setFilters({...filters, size: value})}
+                onValueChange={(value) => setFilters({...filters, size: value === 'all' ? '' : value})}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Todos" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Todos los tamaños</SelectItem>
+                  <SelectItem value="all">Todos los tamaños</SelectItem>
                   <SelectItem value="pequeño">Pequeño</SelectItem>
                   <SelectItem value="mediano">Mediano</SelectItem>
                   <SelectItem value="grande">Grande</SelectItem>
@@ -321,13 +321,13 @@ export default function AdoptaCachorros() {
               <Label>Sexo</Label>
               <Select 
                 value={filters.gender} 
-                onValueChange={(value) => setFilters({...filters, gender: value})}
+                onValueChange={(value) => setFilters({...filters, gender: value === 'all' ? '' : value})}
               >
                 <SelectTrigger>
                   <SelectValue placeholder="Todos" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Macho y hembra</SelectItem>
+                  <SelectItem value="all">Macho y hembra</SelectItem>
                   <SelectItem value="macho">Macho</SelectItem>
                   <SelectItem value="hembra">Hembra</SelectItem>
                 </SelectContent>
