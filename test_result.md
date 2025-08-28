@@ -119,7 +119,7 @@ backend:
 
   - task: "Database Setup Endpoint"
     implemented: true
-    working: false
+    working: true
     file: "app/api/[[...path]]/route.js"
     stuck_count: 1
     priority: "high"
@@ -128,6 +128,9 @@ backend:
       - working: false
         agent: "testing"
         comment: "POST /api/setup fails with 500 error. Issue: Supabase tables don't exist and current table creation method using supabaseAdmin.rpc('exec') is not supported by Supabase. Tables need to be created manually via Supabase dashboard or using proper RPC functions."
+      - working: true
+        agent: "testing"
+        comment: "POST /api/setup working correctly after manual database table creation. Database setup endpoint successfully initializes Spanish provinces and cities data. Returns proper success message when setup completes."
 
   - task: "Provinces Endpoint"
     implemented: true
