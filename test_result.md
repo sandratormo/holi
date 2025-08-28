@@ -240,11 +240,6 @@ metadata:
 test_plan:
   current_focus:
     - "Database Setup Endpoint"
-    - "Provinces Endpoint"
-    - "Cities Endpoint"
-    - "Dog Listings CRUD"
-    - "Messages Endpoint"
-    - "Search Functionality"
   stuck_tasks:
     - "Database Setup Endpoint"
   test_all: false
