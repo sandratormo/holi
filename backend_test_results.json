@@ -1,92 +1,138 @@
 {
   "summary": {
-    "passed": 0,
-    "failed": 12,
-    "success_rate": 0.0
+    "passed": 12,
+    "failed": 0,
+    "success_rate": 100.0
   },
   "detailed_results": [
     {
       "test": "Root Endpoint",
-      "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:27:55.074653",
-      "response_data": null
+      "success": true,
+      "message": "API root endpoint working correctly",
+      "timestamp": "2025-08-28T15:28:35.524781",
+      "response_data": {
+        "message": "AdoptaCachorros API"
+      }
     },
     {
       "test": "Database Setup",
-      "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:27:55.627997",
-      "response_data": null
+      "success": true,
+      "message": "Database tables created successfully",
+      "timestamp": "2025-08-28T15:28:47.083896",
+      "response_data": {
+        "message": "Database setup completed successfully"
+      }
     },
     {
       "test": "Provinces Endpoint",
-      "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:27:56.180092",
+      "success": true,
+      "message": "Found 10 provinces including: Madrid, Barcelona, Valencia, Sevilla",
+      "timestamp": "2025-08-28T15:28:48.332960",
       "response_data": null
     },
     {
-      "test": "Cities Endpoint",
-      "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:27:56.731815",
+      "test": "Cities Endpoint (All)",
+      "success": true,
+      "message": "Found 10 cities",
+      "timestamp": "2025-08-28T15:28:49.372938",
+      "response_data": null
+    },
+    {
+      "test": "Cities Endpoint (Filtered)",
+      "success": true,
+      "message": "Province filter working: 1 cities for province alicante",
+      "timestamp": "2025-08-28T15:28:49.897565",
       "response_data": null
     },
     {
       "test": "Create Dog Listing",
-      "success": false,
-      "message": "Cannot get provinces for test data",
-      "timestamp": "2025-08-28T15:27:57.287730",
+      "success": true,
+      "message": "Dog listing created successfully with ID: 19bde126-91e2-4446-8f07-ed3da9e82a72",
+      "timestamp": "2025-08-28T15:28:51.770146",
       "response_data": null
     },
     {
-      "test": "Get Dog Listings",
-      "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:27:57.835207",
+      "test": "Get Dog Listings (All)",
+      "success": true,
+      "message": "Found 1 dog listings",
+      "timestamp": "2025-08-28T15:28:52.799581",
+      "response_data": null
+    },
+    {
+      "test": "Get Dog Listings (Size Filter)",
+      "success": true,
+      "message": "Size filter working: 1 medium dogs",
+      "timestamp": "2025-08-28T15:28:53.107227",
+      "response_data": null
+    },
+    {
+      "test": "Get Dog Listings (Gender Filter)",
+      "success": true,
+      "message": "Gender filter working: 1 female dogs",
+      "timestamp": "2025-08-28T15:28:53.634551",
+      "response_data": null
+    },
+    {
+      "test": "Get Dog Listings (Urgent Filter)",
+      "success": true,
+      "message": "Urgent filter working: 1 urgent dogs",
+      "timestamp": "2025-08-28T15:28:53.935985",
       "response_data": null
     },
     {
       "test": "Get Single Dog",
-      "success": false,
-      "message": "No dog ID available for testing",
-      "timestamp": "2025-08-28T15:27:58.336533",
+      "success": true,
+      "message": "Successfully retrieved dog: Luna",
+      "timestamp": "2025-08-28T15:28:54.965145",
       "response_data": null
     },
     {
       "test": "Send Message",
-      "success": false,
-      "message": "No dog ID available for testing",
-      "timestamp": "2025-08-28T15:27:58.836681",
+      "success": true,
+      "message": "Message sent successfully with ID: d974771c-7616-4c7d-b567-cd3918d087ad",
+      "timestamp": "2025-08-28T15:28:55.788109",
       "response_data": null
     },
     {
-      "test": "Get Messages",
-      "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:27:59.385625",
+      "test": "Get Messages (All)",
+      "success": true,
+      "message": "Found 1 messages",
+      "timestamp": "2025-08-28T15:28:56.803305",
       "response_data": null
     },
     {
-      "test": "Search Functionality",
-      "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:27:59.940686",
+      "test": "Get Messages (Filtered)",
+      "success": true,
+      "message": "Listing filter working: 1 messages for dog",
+      "timestamp": "2025-08-28T15:28:57.330742",
+      "response_data": null
+    },
+    {
+      "test": "Search Functionality (Text)",
+      "success": true,
+      "message": "Text search working: 1 results for 'Luna'",
+      "timestamp": "2025-08-28T15:28:58.438427",
+      "response_data": null
+    },
+    {
+      "test": "Search Functionality (Filtered)",
+      "success": true,
+      "message": "Filtered search working: 1 results",
+      "timestamp": "2025-08-28T15:28:58.977092",
       "response_data": null
     },
     {
       "test": "Stats Endpoint",
-      "success": false,
-      "message": "HTTP 502: ",
-      "timestamp": "2025-08-28T15:28:00.519271",
+      "success": true,
+      "message": "Statistics working correctly - Dogs: 1, Urgent: 1, Messages: 1",
+      "timestamp": "2025-08-28T15:29:00.343454",
       "response_data": null
     },
     {
       "test": "Error Handling",
-      "success": false,
-      "message": "Expected 400 error, got: 502",
-      "timestamp": "2025-08-28T15:28:01.073848",
+      "success": true,
+      "message": "Validation errors handled correctly",
+      "timestamp": "2025-08-28T15:29:01.005558",
       "response_data": null
     }
   ]
