@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AdoptaCachorros Backend API Test Suite
+adoptaunpana.es Backend API Test Suite
 Tests all backend endpoints for the dog adoption platform
 """
 
@@ -17,7 +17,7 @@ HEADERS = {
     'Accept': 'application/json'
 }
 
-class AdoptaCachorrosAPITester:
+class AdoptaunpanaAPITester:
     def __init__(self):
         self.base_url = BASE_URL
         self.headers = HEADERS
@@ -47,7 +47,7 @@ class AdoptaCachorrosAPITester:
             
             if response.status_code == 200:
                 data = response.json()
-                if data.get('message') == "AdoptaCachorros API":
+                if data.get('message') == "adoptaunpana.es API":
                     self.log_result("Root Endpoint", True, "API root endpoint working correctly", data)
                     return True
                 else:
@@ -484,7 +484,7 @@ class AdoptaCachorrosAPITester:
     
     def run_all_tests(self):
         """Run all backend API tests"""
-        print("🐕 Starting AdoptaCachorros Backend API Tests")
+        print("🐕 Starting adoptaunpana.es Backend API Tests")
         print("=" * 60)
         
         tests = [
@@ -519,7 +519,7 @@ class AdoptaCachorrosAPITester:
             time.sleep(0.5)
         
         print("\n" + "=" * 60)
-        print(f"🐕 AdoptaCachorros Backend API Test Results")
+        print(f"🐕 adoptaunpana.es Backend API Test Results")
         print(f"✅ Passed: {passed}")
         print(f"❌ Failed: {failed}")
         print(f"📊 Success Rate: {(passed/(passed+failed)*100):.1f}%")
@@ -532,7 +532,7 @@ class AdoptaCachorrosAPITester:
         return passed, failed, self.test_results
 
 if __name__ == "__main__":
-    tester = AdoptaCachorrosAPITester()
+    tester = AdoptaunpanaAPITester()
     passed, failed, results = tester.run_all_tests()
     
     # Save detailed results to file

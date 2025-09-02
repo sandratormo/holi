@@ -14,7 +14,7 @@ import { Label } from '@/components/ui/label'
 import { toast } from 'sonner'
 import { Toaster } from '@/components/ui/sonner'
 
-export default function AdoptaCachorros() {
+export default function Adoptaunpana() {
   const [dogs, setDogs] = useState([])
   const [provinces, setProvinces] = useState([])
   const [cities, setCities] = useState([])
@@ -200,7 +200,7 @@ export default function AdoptaCachorros() {
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-3">
               <Heart className="w-8 h-8 text-green-600" />
-              <h1 className="text-2xl font-bold text-gray-900">AdoptaCachorros</h1>
+              <h1 className="text-2xl font-bold text-gray-900">adoptaunpana.es</h1>
             </div>
             <Button 
               onClick={() => setShowAddListing(true)}
@@ -720,13 +720,13 @@ export default function AdoptaCachorros() {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Heart className="w-6 h-6" />
-            <span className="text-xl font-semibold">AdoptaCachorros</span>
+            <span className="text-xl font-semibold">adoptaunpana.es</span>
           </div>
           <p className="text-gray-400">
             Plataforma gratuita para la adopción de perros en España
           </p>
           <p className="text-sm text-gray-500 mt-2">
-            © 2024 AdoptaCachorros. Ayudando a crear familias felices.
+            © 2024 adoptaunpana.es. Ayudando a crear familias felices.
           </p>
         </div>
       </footer>

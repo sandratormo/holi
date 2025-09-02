@@ -29,7 +29,7 @@ async function handleRoute(request, { params }) {
 
     // Root endpoint
     if (route === '/' && method === 'GET') {
-      return handleCORS(NextResponse.json({ message: "AdoptaCachorros API" }))
+      return handleCORS(NextResponse.json({ message: "adoptaunpana.es API" }))
     }
 
     // Initialize database tables (one-time setup)

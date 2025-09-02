@@ -1,20 +1,20 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'AdoptaCachorros - Adopción de Perros en España',
+  title: 'adoptaunpana.es - Adopción de Perros en España',
   description: 'La plataforma líder para adoptar cachorros y perros en España. Encuentra tu compañero perfecto y dale una segunda oportunidad.',
   keywords: 'adopcion perros españa, adoptar cachorro, protectora animales, perros abandono, adopcion madrid barcelona',
   openGraph: {
-    title: 'AdoptaCachorros - Adopción de Perros en España',
+    title: 'adoptaunpana.es - Adopción de Perros en España',
     description: 'La plataforma líder para adoptar cachorros y perros en España. Encuentra tu compañero perfecto y dale una segunda oportunidad.',
     type: 'website',
-    url: 'https://adoptacachorros.es',
+    url: 'https://adoptaunpana.es',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?w=1200&h=630&fit=crop',
         width: 1200,
         height: 630,
-        alt: 'AdoptaCachorros - Adopción de Perros'
+        alt: 'adoptaunpana.es - Adopción de Perros'
       }
     ]
   }
